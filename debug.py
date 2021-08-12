@@ -4,9 +4,11 @@ from os.path import dirname, basename, join, isfile
 import skills
 import database
 from skills import *
+import utils.vosk_listen as vosk
 
 width = 80
 
+# vosk.listen()
 
 def show_disabled_skills():
     print("-" * width)

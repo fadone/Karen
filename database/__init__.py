@@ -4,7 +4,7 @@ import sqlite3
 class CommandDatabase:
 
     def __init__(self):
-        self.db = sqlite3.connect("karen.sqlite")
+        self.db = sqlite3.connect("database/karen.sqlite")
         self.db.execute("CREATE TABLE IF NOT EXISTS commands("
                         "id INTEGER PRIMARY KEY, "
                         "command TEXT, "
