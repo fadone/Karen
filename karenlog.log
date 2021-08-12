@@ -1,0 +1,15 @@
+2021-07-30 23:52:33,946 Logging debug started!
+2021-07-30 23:52:34,115 Configurations loaded: 
+{
+    "assistant_name": "Cortana",
+    "first_time": "false",
+    "speech_rec": "google",
+    "username": "Hisham",
+    "wake_word": "hey karen"
+}
+{
+    "news_api": "None",
+    "open_location": "None",
+    "open_weather": "93863d2f0fe7c41b14927e68c72225a5"
+}
+2021-07-30 23:52:34,260 Listening for wake_word: hey karen
