@@ -1,14 +1,10 @@
-import glob
-from os.path import dirname, basename, join, isfile
 
 import skills
 import database
 from skills import *
-import utils.vosk_listen as vosk
 
 width = 80
 
-# vosk.listen()
 
 def show_disabled_skills():
     print("-" * width)
@@ -55,22 +51,10 @@ def show_all_commands_sorted_by_length():
 def show_commands_list():
     print("-" * width)
     print("COMMANDS LIST:")
-    commands_list = sort_by_commands_length(skills.get_commands_list())
+    commands_list = sorted(skills.get_commands_list(), key=len)
     for module_func_commands in commands_list:
-        for module_func_command in module_func_commands:
-            # print(module_func_command)
-            mod = module_func_command[0]
-            func = module_func_command[1]
-            commands = module_func_command[2]
-
-            print("{}\n\t{}\n\t\t{}".format(mod, func, commands))
-
+            print(module_func_commands)
     print("-" * width)
-
-
-def sort_by_commands_length(command_list):
-    command_list.sort(key=lambda x: x[1])
-    return command_list
 
 
 def show_all_configurations():

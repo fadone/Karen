@@ -3,12 +3,11 @@ import pyaudio
 import json
 from utils.settings import MyConfiguration
 
+model = Model("utils/model")
+
 
 def listen():
-    # Speech Recognition
-    model = Model("utils/model")
     rec = KaldiRecognizer(model, 16000)
-
     # Opens microphone for listening.
     p = pyaudio.PyAudio()
     stream = p.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=4096)
@@ -31,7 +30,6 @@ def listen_wake_word():
     # Speech Recognition
     config = MyConfiguration()
     wake_word = config.wake_word
-    model = Model("utils/model")
     rec = KaldiRecognizer(model, 16000, '["' + wake_word + '"]')
 
     # Opens microphone for listening.

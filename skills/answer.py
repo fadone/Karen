@@ -1,7 +1,7 @@
 import datetime
 import random
 from os.path import basename
-
+from utils.settings import MyConfiguration
 import pyjokes
 
 name = basename(__file__[:-3])
@@ -39,7 +39,9 @@ def what_can_you_do(text):
 
 
 def who_are_you(text):
-    return "I am Karen, Your personal assistant! Ask me anything and i will do that for you!"
+    config = MyConfiguration()
+    assistant_name = config.assistant_name
+    return "I am {}, Your personal assistant! Ask me anything and i will do that for you!".format(assistant_name)
 
 
 def tell_joke(text):
