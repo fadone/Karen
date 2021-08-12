@@ -20,7 +20,7 @@ import json
 
 DEFAULT_TEXT = "Hi! What can i help you with?"
 
-logging.basicConfig(filename="karenlog.log",
+logging.basicConfig(filename="../karenlog.log",
                     format='%(asctime)s %(message)s',
                     filemode='w')
 logger = logging.getLogger("karen")
@@ -352,7 +352,7 @@ if first_time == "true":
 
 
 main_window = tkinter.Tk()
-mic_img = tkinter.PhotoImage(file="images/mic.png")
+mic_img = tkinter.PhotoImage(file="../images/mic.png")
 mic_image = mic_img.subsample(10, 10)
 main_window.title("Karen")
 main_window.geometry("320x480-8+60")
