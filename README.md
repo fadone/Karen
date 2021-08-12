@@ -47,6 +47,15 @@ ADDING NEW SKILLS:
         import skill_name
 
 
+FRAMEWORKS:
+- Tkinter (GUI)
+- Numpy (Scientific)
+- Selenium (Web automation)
+- BeautifulSoup (Web scraping)
+- Flask (Web development)
+- SQLite (Database)
+- Git (Version Control)
+
 
 TODO:
 -----
@@ -82,15 +91,6 @@ v0.3: (06-08-2021)
 - added weather api
 
 
-
-FRAMEWORKS:
-- Tkinter (GUI)
-- Numpy (Scientific)
-- Selenium (Web automation)
-- BeautifulSoup (Web scraping)
-- Flask (Web development)
-- SQLite (Database)
-- Git (Version Control)
 
 
 
