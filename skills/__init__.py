@@ -58,7 +58,6 @@ def get_all_commands():
 def execute(text):
     # commands_list = get_commands_list()
     commands_list = sorted(get_commands_list(), key=len, reverse=True)
-    print(commands_list)
     if not commands_list:
         return "No skills found!"
     for module_func_commands in commands_list:
