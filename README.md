@@ -66,19 +66,19 @@ FRAMEWORKS:
 
 TODO:
 -----
-- develop web interface using flask
-- add skill: news using api
-- add skill: location using api
-- add skill: search google using url
-- add skill: take picture using camera
-- fix command test internet speed 
-- add skill: open youtube using url
-- add skill: take notes in notepad
-- fix control tv
-- add skill: track using database, social media (Facebook, Instagram, Snapchat)
-- add skill: facial recognition using opencv
-- add smart-skill: digital care using screentime
-- improve command matching using regex
+- [ ] develop web interface using flask
+- [ ] add skill: news using api
+- [ ] add skill: location using api
+- [ ] add skill: search google using url
+- [ ] add skill: take picture using camera
+- [ ] fix command test internet speed 
+- [ ] add skill: open youtube using url
+- [ ] add skill: take notes in notepad
+- [ ] fix control tv
+- [ ] add skill: track using database, social media (Facebook, Instagram, Snapchat)
+- [ ] add skill: facial recognition using opencv
+- [ ] add smart-skill: digital care using screentime
+- [ ] improve command matching using regex
 
 
 CHANGELOG:
